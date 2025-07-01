@@ -2,6 +2,14 @@ import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { HiMiniMagnifyingGlass } from "react-icons/hi2";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
+import HappyCustomer from "@/components/HappyCustomer";
+import ForOurGallery from "@/components/ForOurGallery";
+import GetInTouch from "@/components/GetInTouch";
 const whatWeMake = [
   {
     image: "/make1.png",
@@ -156,20 +164,43 @@ export default function Home() {
           <p className="text-6xl text-[#E08C27] text-center font-imperator">
             New Best seller
           </p>
-          <p className="text-xl font-metropolis mt-1 text-center font-imperator">
+          <p className="text-xl font-metropolis mt-1 text-center font-imperator px-2">
             Discover a wide selection of mouth-watering cakes, breads, and
             desserts. Made with quality ingredients, special flavors, and
             tempting appearances.
           </p>
         </div>
-        <div className="max-w-7xl mx-auto p-2">
+        <div className="md:hidden mt-[40px] p-3">
+          <Carousel>
+            <CarouselContent>
+              {whatWeMake.map((item, index) => (
+                <CarouselItem key={index} className="basis-[85%] ">
+                  <div className="w-full relative  h-[293px] max-w-[293px] mx-auto">
+                    <Image
+                      src={item.image}
+                      alt={item.alt}
+                      fill
+                      className="object-cover rounded-md"
+                    />
+                  </div>
+                  <div className="mt-[16px] text-center">
+                    <p className="font-medium font-neue text-2xl">
+                      {item.title}
+                    </p>
+                    <p className="font-medium font-neue text-[#3B3B3B] max-w-[293px] mx-auto truncate">
+                      {item.description}
+                    </p>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+          </Carousel>
+        </div>
+        <div className="max-w-7xl mx-auto p-2 hidden md:block">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-[40px]">
             {whatWeMake.map((item, index) => (
-              <div>
-                <div
-                  key={index}
-                  className="w-full relative h-[293px] max-w-[293px]"
-                >
+              <div key={index}>
+                <div className="w-full relative h-[293px] max-w-[293px]">
                   <Image
                     src={item.image}
                     alt={item.alt}
@@ -193,6 +224,36 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="bg-[#E08C27] md:h-[458px]">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between overflow-hidden px-4 py-8 md:py-0">
+          <div className="relative h-[250px] md:h-[460px] w-full md:max-w-[611px] order-1 md:order-2 mb-6 md:mb-0">
+            <Image
+              src="/black-forest.png"
+              alt="Black Forest Cake"
+              fill
+              className="object-cover rounded-md"
+            />
+          </div>
+
+          <div className="order-2 md:order-1">
+            <p className="text-[40px] md:text-[80px] mt-12 leading-[0.9] font-imperator-vanila text-white max-w-[454px]">
+              Black forest cake edition
+            </p>
+            <p className="mt-4 md:mt-[39px] font-metropolis text-white max-w-[509px] text-sm md:text-base">
+              Blackforest cake dari Asia Baru ini tampil elegan dengan lapisan
+              cokelat yang lembut dan kilap menggoda. Bagian atasnya dihiasi
+              dengan cantik oleh semprotan krim segar, taburan bubuk cokelat,
+              dan topping cokelat bulat kecil. Sentuhan segar dari stroberi utuh
+              dan dekorasi cokelat spiral memberikan tampilan premium. Disajikan
+              di atas tatakan kayu dengan nuansa hangat, cake ini cocok sebagai
+              suguhan istimewa untuk momen berkesan.
+            </p>
+          </div>
+        </div>
+      </div>
+      <HappyCustomer />
+      <ForOurGallery />
+      <GetInTouch />
     </div>
   );
 }

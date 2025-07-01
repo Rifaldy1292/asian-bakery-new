@@ -9,7 +9,6 @@ export default function Footer() {
       <footer className="h-auto bg-[#E08C27] w-full">
         <div className="max-w-[1440px] mx-auto">
           <div className="px-[20px] md:px-[67px] py-[40px] md:py-[76px] flex flex-col md:flex-row md:justify-between gap-10 md:h-[330.9px]">
-            {/* Kiri: Logo dan Sosmed */}
             <div className="flex flex-col items-start">
               <div className="bg-white p-2.5 rounded-[12px] w-fit">
                 <Image
@@ -22,7 +21,10 @@ export default function Footer() {
 
               <div className="flex gap-5 mt-[30px] md:mt-[51px]">
                 {["instagram", "twitter", "fb", "youtube"].map((name) => (
-                  <div key={name} className="bg-white/10 rounded-full p-[10px]">
+                  <div
+                    key={name}
+                    className="bg-white/10 rounded-full p-[10px] flex items-center justify-center"
+                  >
                     <Image
                       src={`/${name}.png`}
                       alt={name}
@@ -34,8 +36,7 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Kanan: Menu */}
-            <div className="text-white font-generalsans grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-[50px] w-full md:w-auto">
+            <div className="text-white font-generalsans grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-[50px] w-full md:w-auto">
               <div className="w-full md:w-[184px]">
                 <h3 className="font-medium text-lg font-manrope mb-4">
                   Quick Menu
@@ -88,10 +89,12 @@ export default function Footer() {
               </div>
 
               <div>
-                <h3 className="font-medium mb-4 font-manrope text-lg">
-                  Bunggasi
-                </h3>
                 <ul className="space-y-2">
+                  <li>
+                    <a href="#" className="hover:underline">
+                      Bunggasi
+                    </a>
+                  </li>
                   <li>
                     <a href="#" className="hover:underline">
                       Ranomeeto

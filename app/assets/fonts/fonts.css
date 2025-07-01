@@ -1,0 +1,31 @@
+/* fonts.css */
+@import url("https://cdn.jsdelivr.net/gh/chrismsimpson/Metropolis@master/metropolis.css");
+@import url("https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/imperator");
+@import url("https://fonts.cdnfonts.com/css/imperatorbronze");
+@import url("https://fonts.cdnfonts.com/css/neue-montreal");
+@import url("https://fonts.cdnfonts.com/css/imperator");
+.font-neue {
+  font-family: "Neue Montreal", sans-serif;
+}
+
+.font-metropolis {
+  font-family: "Metropolis";
+}
+
+.font-generalsans {
+  font-family: "General Sans", sans-serif;
+}
+
+.font-manrope {
+  font-family: "Manrope", sans-serif;
+}
+
+.font-imperator {
+  font-family: "ImperatorBronze", serif;
+}
+
+.font-imperator-vanila {
+  font-family: "Imperator", serif;
+}

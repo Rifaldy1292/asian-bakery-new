@@ -56,7 +56,7 @@ export default function Home() {
           <div className="w-full mt-8 max-w-sm max-w-[483px] relative mx-auto px-2">
             <Input
               placeholder="Search..."
-              className="h-[60px] sm:h-[66px] md:h-[71px] pl-12 pr-28 bg-[#E69635] border border-[#FFFFFF26] w-full"
+              className="h-[60px] sm:h-[66px] md:h-[71px] pl-12 pr-28 bg-[#E69635] placeholder:text-[#FFFFFF80] border border-[#FFFFFF26] w-full"
             />
             <HiMiniMagnifyingGlass
               size={20}

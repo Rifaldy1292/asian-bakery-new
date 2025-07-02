@@ -14,20 +14,35 @@ export default function ForOurGallery() {
             care and premium ingredients.
           </p>
         </div>
-        <div className="flex   items-center w-full mt-10 gap-4 overflow-x-auto">
-          <div className="rounded-[25.37px] w-[214px] h-[273px] relative overflow-hidden">
-            <Image src="/image13.png" alt="galeri image" fill />
+        <div className="flex mx-auto flex-wrap p-5 max-w-[1210px] items-center w-full mt-10 gap-4 ">
+          <div className="rounded-[25.37px] md:w-[214px] w-[154px] h-[273px] relative overflow-hidden ">
+            <Image
+              src="/image13.png"
+              alt="galeri image"
+              fill
+              className="object-cover"
+            />
           </div>
           <div>
-            <div className="rounded-[25.37px]  relative overflow-hidden w-[214px] h-[160px]">
-              <Image src="/image16.png" alt="galeri image" fill />
+            <div className="rounded-[25.37px]  relative overflow-hidden md:w-[214px] w-[154px] h-[160px]">
+              <Image
+                src="/image16.png"
+                alt="galeri image"
+                fill
+                className="object-cover"
+              />
             </div>
-            <div className="rounded-[25.37px] relative mt-5 overflow-hidden w-[214px]  h-[280px]">
-              <Image src="/image14.png" fill alt="galeri image" />
+            <div className="rounded-[25.37px] relative mt-5 overflow-hidden md:w-[214px] w-[154px]  h-[280px]">
+              <Image
+                src="/image14.png"
+                fill
+                alt="galeri image"
+                className="object-cover"
+              />
             </div>
           </div>
           <div>
-            <div className="rounded-[25.37px] relative   overflow-hidden object-cover w-[214px] h-[548px]">
+            <div className="rounded-[25.37px] relative   overflow-hidden object-cover md:w-[214px] w-[154px] h-[548px]">
               <Image
                 src="/image15.png"
                 fill
@@ -37,15 +52,30 @@ export default function ForOurGallery() {
             </div>
           </div>
           <div>
-            <div className="rounded-[25.37px] relative  overflow-hidden w-[214px]  h-[280px]">
-              <Image src="/image17.png" fill alt="galeri image" />
+            <div className="rounded-[25.37px] relative  overflow-hidden md:w-[214px] w-[154px] h-[280px]">
+              <Image
+                src="/image17.png"
+                fill
+                alt="galeri image"
+                className="object-cover"
+              />
             </div>
-            <div className="rounded-[25.37px]  relative mt-5 overflow-hidden w-[214px] h-[160px]">
-              <Image src="/image19.png" alt="galeri image" fill />
+            <div className="rounded-[25.37px]  relative mt-5 overflow-hidden md:w-[214px] w-[154px] h-[160px]">
+              <Image
+                src="/image19.png"
+                alt="galeri image"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
-          <div className="rounded-[25.37px] w-[214px] h-[273px] relative overflow-hidden">
-            <Image src="/image18.png" alt="galeri image" fill />
+          <div className="rounded-[25.37px] md:w-[214px] w-[154px] h-[273px] relative overflow-hidden ">
+            <Image
+              src="/image18.png"
+              alt="galeri image"
+              fill
+              className="object-cover"
+            />
           </div>
         </div>
       </div>

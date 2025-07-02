@@ -40,7 +40,7 @@ export default function HappyCustomer() {
               </p>
             </div>
 
-            <div className="bg-[#E08C27] drop-shadow-[0_4px_16px_rgba(0,0,0,0.1)] text-white max-w-[376px] h-[307px] p-6 rounded-lg shadow-md rotate-[-5deg] absolute top-[200px] left-[270px] flex flex-col justify-between">
+            <div className="bg-[#E08C27] drop-shadow-[0_4px_16px_rgba(0,0,0,0.1)] text-white max-w-[376px] h-[307px] p-6 rounded-lg shadow-md rotate-[-5deg] absolute top-[200px] sm:left-[270px] left-[70px] flex flex-col justify-between">
               <div className="flex mb-4">
                 {Array(5)
                   .fill(0)
@@ -65,7 +65,7 @@ export default function HappyCustomer() {
               </p>
             </div>
 
-            <div className="bg-[#E08C27] drop-shadow-[0_4px_16px_rgba(0,0,0,0.1)] text-white max-w-[376px] h-[307px] p-6 rounded-lg shadow-md rotate-[10deg] absolute top-[140px] left-[590px] flex flex-col justify-between">
+            <div className="bg-[#E08C27] drop-shadow-[0_4px_16px_rgba(0,0,0,0.1)] text-white max-w-[376px] h-[307px] p-6 rounded-lg shadow-md rotate-[10deg] absolute top-[140px] lg:left-[590px] md:left-[390px] sm:left-[190px] left-[80px] flex flex-col justify-between">
               <div className="flex mb-4">
                 {Array(5)
                   .fill(0)

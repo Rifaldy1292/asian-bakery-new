@@ -21,7 +21,7 @@ export default function Footer() {
                 {["instagram", "twitter", "fb", "youtube"].map((name) => (
                   <div
                     key={name}
-                    className="bg-white/10 rounded-full p-[10px] flex items-center justify-center"
+                    className="bg-white/10 rounded-full p-[10px] w-[52px] h-[52px] flex items-center justify-center"
                   >
                     <Image
                       src={`/${name}.png`}

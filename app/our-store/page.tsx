@@ -2,7 +2,11 @@ import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { HiMiniMagnifyingGlass } from "react-icons/hi2";
-
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
 import {
@@ -43,7 +47,6 @@ export default function OurStore() {
             />
           </div>
         </div>
-
         <div className="flex flex-col-reverse md:flex-row md:items-center md:justify-between max-w-7xl mx-auto px-2 gap-6 mt-11">
           <div className="flex gap-4 w-full max-w-[390px] mx-auto md:mx-0">
             <Select>
@@ -72,7 +75,7 @@ export default function OurStore() {
             </Button>
           </div>
         </div>
-        <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-y-13 gap-x-9 mt-10 grid-cols-1">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-y-13 gap-x-9 mt-10 grid-cols-1 lg:grid hidden">
           {[...Array(6)].map((_, index) => (
             <Card
               key={index}
@@ -92,7 +95,7 @@ export default function OurStore() {
                 <CardTitle className="font-metropolis font-semibold text-3xl">
                   text-3xl
                 </CardTitle>
-                <CardDescription className="font-metropolis text-black mt-2 max-w-[324px]">
+                <CardDescription className="font-metropolis text-black mt-4 max-w-[324px]">
                   Jl. Sao Sao No.246, Bende, Kec. Kadia, Kota Kendari, Sulawesi
                   Tenggara 93117
                 </CardDescription>
@@ -115,6 +118,58 @@ export default function OurStore() {
               </CardFooter>
             </Card>
           ))}
+        </div>{" "}
+        <div className="lg:hidden px-4  mt-10">
+          <Carousel
+            opts={{
+              align: "start",
+            }}
+            className="w-full"
+          >
+            <CarouselContent className="-ml-2 gap-5">
+              {[...Array(6)].map((_, index) => (
+                <CarouselItem key={index} className="pl-2 basis-[85%]">
+                  <Card className="border-[#CDCDCD] w-full h-[484px] p-3">
+                    <CardHeader className="px-0">
+                      <div className="relative h-[249px] w-full">
+                        <Image
+                          src="/image14.png"
+                          fill
+                          alt={`Store Image ${index + 1}`}
+                          className="object-cover rounded-[12px]"
+                        />
+                      </div>
+                    </CardHeader>
+                    <CardContent className="px-0">
+                      <CardTitle className="font-metropolis font-semibold text-3xl">
+                        text-3xl
+                      </CardTitle>
+                      <CardDescription className="font-metropolis text-black mt-4 max-w-[324px] line-clamp-2">
+                        Jl. Sao Sao No.246, Bende, Kec. Kadia, Kota Kendari,
+                        Sulawesi Tenggara 93117
+                      </CardDescription>
+                    </CardContent>
+                    <CardFooter className="flex w-full gap-2 px-0 mt-auto">
+                      <Button
+                        variant="outline"
+                        className="flex flex-1 items-center justify-center gap-2 text-asian-bakery px-4"
+                      >
+                        <FaMapMarkerAlt size={20} />
+                        View Rute
+                      </Button>
+                      <Button
+                        type="submit"
+                        className="flex flex-1 items-center justify-center gap-2 text-white px-4"
+                      >
+                        <FaWhatsapp size={20} />
+                        Contact Person
+                      </Button>
+                    </CardFooter>
+                  </Card>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+          </Carousel>
         </div>
       </div>
     </>

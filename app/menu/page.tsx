@@ -120,7 +120,7 @@ export default function Menu() {
         <div className="md:flex md:justify-between flex flex-col-reverse md:flex-row gap-5 ">
           <div className="flex gap-4 max-w-[390px] font-metropolis px-2 mx-auto md:mx-0 w-full mt-auto">
             <Select>
-              <SelectTrigger className="w-[180px] text-asian-bakery">
+              <SelectTrigger className="px-4 text-asian-bakery">
                 <SelectValue placeholder="Theme" />
               </SelectTrigger>
               <SelectContent className="">
@@ -130,7 +130,7 @@ export default function Menu() {
               </SelectContent>
             </Select>
             <Select>
-              <SelectTrigger className="w-[180px] text-asian-bakery">
+              <SelectTrigger className="w-[180px] px-4 text-asian-bakery">
                 <SelectValue placeholder="Pastry" />
               </SelectTrigger>
               <SelectContent className="">
@@ -140,7 +140,7 @@ export default function Menu() {
               </SelectContent>
             </Select>
             <Select>
-              <SelectTrigger className="w-[180px] text-asian-bakery">
+              <SelectTrigger className="w-[180px] px-4 text-asian-bakery">
                 <SelectValue placeholder="Store Sao sao " />
               </SelectTrigger>
               <SelectContent className="">
@@ -178,10 +178,10 @@ export default function Menu() {
                     />
                   </div>
                   <div className="mt-[16px] text-center">
-                    <p className="font-medium font-neue text-2xl">
+                    <p className="font-medium font-metropolis text-2xl">
                       {item.title}
                     </p>
-                    <p className="font-medium font-metropolis text-[#3B3B3B] max-w-[293px] mx-auto ">
+                    <p className="font-medium font-metropolis text-[#3B3B3B] max-w-[293px]  mx-auto ">
                       {item.description}
                     </p>
                   </div>
@@ -206,7 +206,15 @@ export default function Menu() {
                   <p className="font-medium font-metropolis text-2xl">
                     {item.title}
                   </p>
-                  <p className="font-medium  font-metropolis text-[#3B3B3B] ">
+                  <p
+                    className=" font-medium   mt-2 font-metropolis text-[#3B3B3B] "
+                    style={{
+                      display: "-webkit-box",
+                      WebkitLineClamp: 3,
+                      WebkitBoxOrient: "vertical",
+                      overflow: "hidden",
+                    }}
+                  >
                     {item.description}
                   </p>
                 </div>

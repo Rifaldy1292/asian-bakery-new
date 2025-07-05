@@ -1,12 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { Button } from "./ui/button";
-import Card from "@/app/assets/img/card.png";
 export default function Footer() {
   return (
     <>
-      <footer className="h-auto bg-[#E08C27] w-full">
+      <footer className="h-auto  bg-[url('/Untitled(3).png')] bg-cover w-full font-metropolis">
         <div className="max-w-[1440px] mx-auto">
           <div className="px-[20px] md:px-[67px] py-[40px] md:py-[76px] flex flex-col md:flex-row md:justify-between gap-10 md:h-[330.9px]">
             <div className="flex flex-col items-start">

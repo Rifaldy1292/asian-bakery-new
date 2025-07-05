@@ -20,10 +20,10 @@ export default function GetInTouch() {
   return (
     <>
       <div className="relative  ">
-        <div className=" max-w-[1186px]  w-full py-[34px] px-[27px] mt-[310px] rounded-[20px] bg-white shadow-lg z-10 left-1/2 -translate-x-1/2 absolute text-black">
+        <div className=" max-w-[1186px]  w-full py-[34px] px-[27px] mt-[280px] rounded-[20px] bg-white shadow-lg z-10 left-1/2 -translate-x-1/2 absolute text-black">
           <div className="flex md:justify-between flex-col md:flex-row gap-9">
             <div className="w-full max-w-[394px]">
-              <div className="bg-[#E08C27] rounded-t-[12px] text-white p-2 max-w-[394px]  h-[261px] flex  justify-between">
+              <div className="bg-asian-bakery rounded-t-[12px] text-white p-2 max-w-[394px]  h-[261px] flex  justify-between">
                 <div className="p-9">
                   <p className="text-2xl  md:text-3xl  font-imperator">
                     Contact information
@@ -44,7 +44,7 @@ export default function GetInTouch() {
                     {["instagram", "twitter", "fb", "youtube"].map((name) => (
                       <div
                         key={name}
-                        className="bg-white/10 rounded-full p-[10px] w-[35px] flex items-center justify-center"
+                        className="bg-white/10 rounded-full p-[10px] w-[35px] h-[35px] flex items-center justify-center"
                       >
                         <Image
                           src={`/${name}.png`}
@@ -106,7 +106,7 @@ export default function GetInTouch() {
               <div className="grid w-full items-center mt-5 gap-3 mb-[42px]">
                 <Label
                   htmlFor=""
-                  className="text-[#E08C27] font-semibold text-lg"
+                  className="text-asian-bakery font-semibold text-lg"
                 >
                   Message*
                 </Label>
@@ -119,12 +119,12 @@ export default function GetInTouch() {
             </div>
           </div>
         </div>
-        <div className="bg-[#E08C27] h-[477px] pt-[79px]">
+        <div className="bg-[url('/Frame1321316423.png')] bg-cover h-[477px] pt-[79px]">
           <div>
             <p className="text-center text-white  font-imperator-vanila text-6xl">
               Get In Touch
             </p>
-            <p className="text-center text-white text-2xl font-metropolis">
+            <p className="text-center text-white text-2xl mt-5 font-metropolis">
               Contact us for orders and complaints
             </p>
           </div>

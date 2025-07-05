@@ -29,19 +29,19 @@ export default function Navbar() {
                 />
               </Link>
             </div>
-            <div className="p-4.5 text-[#E08C27] md:block hidden">
+            <div className="p-4.5 text-asian-bakery md:block hidden">
               <ul className="flex gap-12 text-xl">
                 <li>
                   <Link href="/menu">Menu</Link>
                 </li>
                 <li>
-                  <Link href="/stores">Stores</Link>
+                  <Link href="/our-store">Stores</Link>
                 </li>
                 <li>
-                  <Link href="/treats">Treats</Link>
+                  <Link href="/get-in-touch">Treats</Link>
                 </li>
                 <li>
-                  <Link href="/b2b">B2B</Link>
+                  <Link href="/get-in-touch">B2B</Link>
                 </li>
               </ul>
             </div>
@@ -52,9 +52,9 @@ export default function Navbar() {
             </SheetTrigger>
           </div>
 
-          <SheetContent className="text-[#E08C27]">
+          <SheetContent className="text-asian-bakery">
             <SheetHeader>
-              <SheetTitle className="text-[#E08C27] mb-10">
+              <SheetTitle className="text-asian-bakery mb-10">
                 Navigation
               </SheetTitle>
               <SheetClose asChild>

@@ -3,16 +3,22 @@ import { Geist, Geist_Mono, Roboto } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import "./assets/fonts/fonts.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+import localFont from "next/font/local";
+
+const fontImpertor = localFont({
+  src: "../public/fonts/Imperator.ttf",
+  variable: "--font-imperator",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const fontMetroplis = localFont({
+  src: "../public/fonts/Metropolis-Regular.otf",
+  variable: "--font-metropolis",
+});
+
+const fontImperatorVanila = localFont({
+  src: "../public/fonts/Imperator.ttf",
+  variable: "--font-imperator-vanila",
 });
 
 export const metadata: Metadata = {
@@ -28,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${fontImpertor.variable} ${fontMetroplis.variable} ${fontImperatorVanila.variable} antialiased`}
       >
         <Navbar />
         {children} <Footer />

@@ -8,7 +8,7 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import HappyCustomer from "@/components/HappyCustomer";
-import ForOurGallery from "@/components/ForOurGallery";
+import FromOurGallery from "@/components/FromOurGallery";
 import GetInTouch from "@/components/GetInTouch";
 const whatWeMake = [
   {
@@ -43,8 +43,8 @@ const whatWeMake = [
 export default function Home() {
   return (
     <div className="">
-      <div className="h-[755px] bg-[linear-gradient(to_bottom,rgba(228,119,13,0.6),rgba(228,119,13,1)),url('/bg-jumbotron.png')] bg-cover bg-center flex items-center">
-        <div className="max-w-[943px] mx-auto px-4">
+      <div className="h-[755px] bg-[url('/Untitled.png')] bg-cover bg-center flex items-center">
+        <div className="max-w-4xl mx-auto px-4">
           <p className="text-white text-[32px]  md:text-7xl font-imperator-vanila w-full text-center leading-tight">
             Handmade Bakery 🥖 with Authentic Asian taste
           </p>
@@ -53,28 +53,28 @@ export default function Home() {
             recipes passed down through generations. Experience the art of Asian
             baking in every bite.
           </p>
-          <div className="w-full mt-8 max-w-sm max-w-[483px] relative mx-auto px-2">
+          <div className="w-full mt-8 max-w-sm md:max-w-[483px] relative mx-auto px-2">
             <Input
-              placeholder="Search..."
-              className="h-[60px] sm:h-[66px] md:h-[71px] pl-12 pr-28 bg-[#E69635] placeholder:text-[#FFFFFF80] border border-[#FFFFFF26] w-full"
+              placeholder="Search your fav bread"
+              className="h-[60px] sm:h-[66px] md:h-[71px] pl-12 pr-28 bg-[#E69635] placeholder:text-[#FFFFFF80] text-white border border-[#FFFFFF26] w-full"
             />
             <HiMiniMagnifyingGlass
-              size={20}
-              className="absolute left-4 top-1/2 -translate-y-1/2 text-white pointer-events-none"
+              size={24}
+              className="absolute left-6 top-1/2 -translate-y-1/2 text-white pointer-events-none"
             />
             <Button
               variant="secondary"
-              className="absolute  text-[#E08C27] font-metropolis right-5 top-1/2 -translate-y-1/2  px-4 py-2 rounded-md"
+              className="absolute  text-asian-bakery font-metropolis  right-5 top-1/2 -translate-y-1/2  p-6 rounded-md"
             >
               Search
             </Button>
           </div>
         </div>
       </div>
-      <div className="bg-[#FFFAF3] md:h-[835px]  px-4 py-5">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-0  md:h-[835px]">
+      <div className="bg-[#FFFAF3] md:h-full  px-4 py-30">
+        <div className="max-w-7xl mx-auto flex flex-col   lg:flex-row items-center gap-10 md:gap-7 h-full">
           <div className="max-w-full md:max-w-[379px] w-full">
-            <p className="text-3xl md:text-6xl text-center font-imperator-vanila w-full">
+            <p className="text-3xl md:text-6xl  font-imperator-vanila w-full">
               Our Heritage Bakeshop
             </p>
             <div className="rounded-[12px] overflow-hidden">
@@ -89,10 +89,10 @@ export default function Home() {
           </div>
 
           <div className="w-full bg-[#FFFAF3]">
-            <div className="max-w-[766px] py-[40px] md:py-[76px] px-[20px] md:px-[49px] rounded-[12px] w-full bg-[#E08C27] ml-auto">
+            <div className="max-w-[766px] py-[40px] md:py-[76px] px-[20px] md:px-[49px] rounded-[12px] w-full bg-[url('/Frame-16.png')] bg-cover bg-center 1 ml-auto">
               <div className="flex flex-col md:flex-row font-metropolis text-white gap-6 md:gap-0">
                 <div className="w-full md:w-1/3 border-white/20 md:border-r flex gap-4">
-                  <div>
+                  <div className="flex items-center">
                     <Image
                       src="/Vector(5).png"
                       alt="handmade icon"
@@ -102,14 +102,14 @@ export default function Home() {
                   </div>
                   <div>
                     <p className="font-semibold">Hand made</p>
-                    <p className="text-xs max-w-[108px]">
+                    <p className="text-xs mt-2 max-w-[110px]">
                       Crafted by hand for authentic taste.
                     </p>
                   </div>
                 </div>
 
                 <div className="w-full md:w-1/3 md:pl-4 flex gap-4 border-white/20 md:border-r">
-                  <div>
+                  <div className="flex  items-center">
                     <Image
                       src="/Vector(6).png"
                       alt="handmade icon"
@@ -119,14 +119,14 @@ export default function Home() {
                   </div>
                   <div>
                     <p className="font-semibold">100% Baked</p>
-                    <p className="text-xs max-w-[108px]">
+                    <p className="text-xs mt-2 max-w-[108px]">
                       Fully baked, never instant.
                     </p>
                   </div>
                 </div>
 
                 <div className="w-full md:w-1/3 flex gap-4 md:pl-4">
-                  <div>
+                  <div className="flex items-center">
                     <Image
                       src="/Vector(7).png"
                       alt="handmade icon"
@@ -136,7 +136,7 @@ export default function Home() {
                   </div>
                   <div>
                     <p className="font-semibold">Secure Packing</p>
-                    <p className="text-xs max-w-[108px]">
+                    <p className="text-xs max-w-[130px] mt-2">
                       Safe and neat packaging every time.
                     </p>
                   </div>
@@ -154,14 +154,16 @@ export default function Home() {
                 and service—bringing delightful baked goods to every special
                 moment in your life.
               </p>
-              <Button className="mt-[30px]">View pricelist</Button>
+              <Button className="mt-[30px] py-6 text-lg px-5 font-metropolis">
+                View pricelist
+              </Button>
             </div>
           </div>
         </div>
       </div>
       <div className="py-26 ">
         <div className="max-w-[784px] mx-auto ">
-          <p className="text-6xl text-[#E08C27] text-center font-imperator">
+          <p className="text-6xl text-asian-bakery text-center font-imperator">
             New Best seller
           </p>
           <p className="text-xl font-metropolis mt-1 text-center font-imperator px-2">
@@ -175,7 +177,7 @@ export default function Home() {
             <CarouselContent>
               {whatWeMake.map((item, index) => (
                 <CarouselItem key={index} className="basis-[85%] ">
-                  <div className="w-full relative  h-[293px] max-w-[293px] mx-auto">
+                  <div className="w-full relative  h-[339px] max-w-[293px] mx-auto">
                     <Image
                       src={item.image}
                       alt={item.alt}
@@ -200,7 +202,7 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-[40px]">
             {whatWeMake.map((item, index) => (
               <div key={index}>
-                <div className="w-full relative h-[293px] max-w-[293px]">
+                <div className="w-full relative h-[339px] max-w-[293px]">
                   <Image
                     src={item.image}
                     alt={item.alt}
@@ -210,7 +212,7 @@ export default function Home() {
                 </div>
                 <div className="mt-[16px] ">
                   <p className="font-medium font-neue text-2xl">{item.title}</p>
-                  <p className="font-medium font-neue truncate text-[#3B3B3B] ">
+                  <p className="font-medium font-neue text-[#3B3B3B] ">
                     {item.description}
                   </p>
                 </div>
@@ -218,28 +220,22 @@ export default function Home() {
             ))}
           </div>
           <div className="w-full text-center mt-[40px] ">
-            <Button variant="outline" className="text-[#E08C27]">
+            <Button variant="outline" className="text-asian-bakery">
               View more
             </Button>
           </div>
         </div>
       </div>
-      <div className="bg-[#E08C27] md:h-[458px]">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between overflow-hidden px-4 py-8 md:py-0">
-          <div className="relative h-[250px] md:h-[460px] w-full md:max-w-[611px] order-1 md:order-2 mb-6 md:mb-0">
-            <Image
-              src="/black-forest.png"
-              alt="Black Forest Cake"
-              fill
-              className="object-cover rounded-md"
-            />
+      <div className="bg-[url('/Untitled(1).png')] relative  bg-cover bg-full flex    xl:h-[458px] h-full ">
+        <div className="max-w-7xl mx-auto w-full flex flex-col xl:flex-row justify-between   px-4 py-8  md:py-0">
+          <div className=" lg:w-[750px] w-[300px] mb-4 h-[400px] order-1 xl:order-2 ">
+            <div className="relative  h-[250px] md:h-[460px] w-full w-[611px] order-1  md:mb-0 right"></div>
           </div>
-
-          <div className="order-2 md:order-1">
-            <p className="text-[40px] md:text-[80px] mt-12 leading-[0.9] font-imperator-vanila text-white max-w-[454px]">
+          <div className=" md:mt-15  mt-10 xl:order-1 order-2 ">
+            <p className="text-[40px] md:text-[80px] leading-[0.9] font-imperator-vanila text-white max-w-[454px]">
               Black forest cake edition
             </p>
-            <p className="mt-4 md:mt-[39px] font-metropolis text-white max-w-[509px] text-sm md:text-base">
+            <p className="mt-4 md:mt-[39px] font-metropolis text-white max-w-[509px] w-full text-sm md:text-base">
               Blackforest cake dari Asia Baru ini tampil elegan dengan lapisan
               cokelat yang lembut dan kilap menggoda. Bagian atasnya dihiasi
               dengan cantik oleh semprotan krim segar, taburan bubuk cokelat,
@@ -248,11 +244,21 @@ export default function Home() {
               di atas tatakan kayu dengan nuansa hangat, cake ini cocok sebagai
               suguhan istimewa untuk momen berkesan.
             </p>
+          </div>{" "}
+          <div className="absolute top-0  right-0 w-[829px] h-[400px] ">
+            <div className="relative  h-[458px] md:h-[460px] w-full md:max-w-[829px]     right">
+              <Image
+                src="/ChatGpt-image.png"
+                alt="Black Forest Cake"
+                fill
+                className="object-cover rounded-md"
+              />
+            </div>
           </div>
         </div>
       </div>
       <HappyCustomer />
-      <ForOurGallery />
+      <FromOurGallery />
       <GetInTouch />
     </div>
   );

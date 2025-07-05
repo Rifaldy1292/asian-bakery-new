@@ -81,7 +81,7 @@ export default function Menu() {
           <p className="text-6xl font-imperator-vanila text-center">
             Our Bread & Pastry Menu
           </p>
-          <p className="text-2xl max-w-[600px] text-center mx-auto font-metropolis mt-8">
+          <p className="text-2xl max-w-[720px] text-center mx-auto font-metropolis mt-8">
             Discover a wide selection of mouth-watering cakes, breads, and
             desserts. Made with quality ingredients, special flavors, and
             tempting appearances.
@@ -89,7 +89,7 @@ export default function Menu() {
         </div>
 
         <div className="mx-auto max-w-7xl">
-          <div className="bg-[#E08C27] overflow-hidden p-5 md:p-0 flex flex-col-reverse md:flex-row md:justify-between rounded-[16px] md:min-h-[458px] mt-14 h-auto ">
+          <div className="bg-[url('/Untitled(2).png')] bg-no-repeat bg-cover bg-center bg-full overflow-hidden p-5 md:p-0 flex  flex-col-reverse xl:flex-row md:justify-between rounded-4xl md:min-h-[458px] mt-10 h-auto ">
             <div className="px-6 pt-10 md:pt-[50px] md:ml-[95px]">
               <p className="text-[40px] md:text-[80px] font-imperator-vanila leading-[0.9] text-white">
                 Black forest cake edition
@@ -105,7 +105,7 @@ export default function Menu() {
               </p>
             </div>
 
-            <div className="relative h-[300px] md:h-[460px] w-full md:max-w-[611px] mt-6 md:mt-0">
+            <div className="relative h-[300px] md:h-[460px] w-full md:max-w-[611px] ml-auto mt-6 md:mt-0">
               <Image
                 src="/black-forest.png"
                 alt="Black forest cake"
@@ -116,11 +116,11 @@ export default function Menu() {
           </div>
         </div>
       </div>
-      <div className="py-26 max-w-7xl mx-auto">
+      <div className="py-17 max-w-7xl mx-auto">
         <div className="md:flex md:justify-between flex flex-col-reverse md:flex-row gap-5 ">
-          <div className="flex gap-4 max-w-[390px] px-2 mx-auto md:mx-0 w-full mt-auto">
+          <div className="flex gap-4 max-w-[390px] font-metropolis px-2 mx-auto md:mx-0 w-full mt-auto">
             <Select>
-              <SelectTrigger className="w-[180px] text-[#E08C27]">
+              <SelectTrigger className="w-[180px] text-asian-bakery">
                 <SelectValue placeholder="Theme" />
               </SelectTrigger>
               <SelectContent className="">
@@ -130,7 +130,7 @@ export default function Menu() {
               </SelectContent>
             </Select>
             <Select>
-              <SelectTrigger className="w-[180px] text-[#E08C27]">
+              <SelectTrigger className="w-[180px] text-asian-bakery">
                 <SelectValue placeholder="Pastry" />
               </SelectTrigger>
               <SelectContent className="">
@@ -140,7 +140,7 @@ export default function Menu() {
               </SelectContent>
             </Select>
             <Select>
-              <SelectTrigger className="w-[180px] text-[#E08C27]">
+              <SelectTrigger className="w-[180px] text-asian-bakery">
                 <SelectValue placeholder="Store Sao sao " />
               </SelectTrigger>
               <SelectContent className="">
@@ -150,14 +150,14 @@ export default function Menu() {
               </SelectContent>
             </Select>
           </div>
-          <div className="w-full mt-8 max-w-[483px] mx-auto relative md:ml-auto md:mr-10 px-2">
+          <div className="w-3/8 min-w-[300px] mt-8  mx-auto relative md:ml-auto md:mr-10 px-2">
             <Input
               placeholder="Search your fav bread"
               className="h-[60px] sm:h-[66px] font-metropolis md:h-[71px] placeholder:text-[#FFC786] pl-12 pr-28 bg-[#FFF3E5] border border-[#D0D0D026] w-full"
             />
             <HiMiniMagnifyingGlass
               size={20}
-              className="absolute left-4 top-1/2 -translate-y-1/2 text-[#E08C27] pointer-events-none"
+              className="absolute left-4 top-1/2 -translate-y-1/2 text-asian-bakery pointer-events-none"
             />
             <Button className="absolute   font-metropolis right-5 top-1/2 -translate-y-1/2  px-4 py-2 rounded-md">
               Search
@@ -181,7 +181,7 @@ export default function Menu() {
                     <p className="font-medium font-neue text-2xl">
                       {item.title}
                     </p>
-                    <p className="font-medium font-neue text-[#3B3B3B] max-w-[293px] mx-auto truncate">
+                    <p className="font-medium font-metropolis text-[#3B3B3B] max-w-[293px] mx-auto ">
                       {item.description}
                     </p>
                   </div>
@@ -191,7 +191,7 @@ export default function Menu() {
           </Carousel>
         </div>
         <div className="max-w-7xl mx-auto p-2 hidden md:block">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-[40px]">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-y-17 gap-x-3  mt-[40px]">
             {whatWeMake.map((item, index) => (
               <div key={index}>
                 <div className="w-full relative h-[339px] max-w-[293px]">
@@ -203,8 +203,10 @@ export default function Menu() {
                   />
                 </div>
                 <div className="mt-[16px] ">
-                  <p className="font-medium font-neue text-2xl">{item.title}</p>
-                  <p className="font-medium font-neue truncate text-[#3B3B3B] ">
+                  <p className="font-medium font-metropolis text-2xl">
+                    {item.title}
+                  </p>
+                  <p className="font-medium  font-metropolis text-[#3B3B3B] ">
                     {item.description}
                   </p>
                 </div>

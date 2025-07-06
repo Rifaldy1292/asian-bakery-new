@@ -32,19 +32,40 @@ export default function Navbar() {
             <div className="p-4.5 text-asian-bakery md:block hidden">
               <ul className="flex gap-12 text-xl">
                 <li>
-                  <Link href="/menu">Menu</Link>
+                  <Link
+                    href="/menu"
+                    className="px-2 py-1 rounded-md transition duration-200 hover:text-orange-500 hover:underline"
+                  >
+                    Menu
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/our-store">Stores</Link>
+                  <Link
+                    href="/our-store"
+                    className="px-2 py-1 rounded-md transition duration-200 hover:text-orange-500 hover:underline"
+                  >
+                    Stores
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/get-in-touch">Treats</Link>
+                  <Link
+                    href="/get-in-touch"
+                    className="px-2 py-1 rounded-md transition duration-200 hover:text-orange-500 hover:underline"
+                  >
+                    Treats
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/get-in-touch">B2B</Link>
+                  <Link
+                    href="/get-in-touch"
+                    className="px-2 py-1 rounded-md transition duration-200 hover:text-orange-500 hover:underline"
+                  >
+                    B2B
+                  </Link>
                 </li>
               </ul>
             </div>
+
             <SheetTrigger asChild className=" md:hidden block">
               <Button variant="outline">
                 <FaBars size={24} className="text-yellow-500" />
